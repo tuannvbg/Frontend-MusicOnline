@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Album nổi bật</title>
+    <link rel="shortcut icon" href="image/logo.ico">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/dropdownmenu.css">
+    <link type="text/css" rel="stylesheet" href="css/item-fade.css">
+    <link type="text/css" rel="stylesheet" href="owl/css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="owl/css/owl.theme.default.min.css">
+    <link type="text/css" rel="stylesheet" href="css/ahihi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body style="background-color: rgb(247, 246, 246)">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top fixed-top" style="background-color: #f0f0f0;">
+            <div class="container">
+                <a class="navbar-brand disabled" href="../index.html">
+                    <img src="image/logo-1.f26d59aa.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Music for Life
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <!--TODO:THIS's dropdown menu-->
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropbtn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>TOP 100</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Nhạc Việt Nam</a>
+                                <a class="dropdown-item" href="#">Nhạc Âu Mỹ</a>
+                                <a class="dropdown-item" href="#">Nhạc Hàn Quốc</a>
+                                <a class="dropdown-item" href="#">Nhạc Hoa Ngữ</a>
+                                <a class="dropdown-item" href="#">Nhạc Châu Á</a>
+                                <a class="dropdown-item" href="#">Hòa tấu</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>Nghệ sỹ</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Việt Nam</a>
+                                <a class="dropdown-item" href="#">Châu Á</a>
+                                <a class="dropdown-item" href="#">Âu Mỹ</a>
+                                <a class="dropdown-item" href="#">Hàn Quốc</a>
+                                <a class="dropdown-item" href="#">Hoa Ngữ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropbtn" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b style="color:rgb(0, 174, 255);">Album</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Việt Nam</a>
+                                <a class="dropdown-item" href="#">Châu Á</a>
+                                <a class="dropdown-item" href="#">Âu Mỹ</a>
+                                <a class="dropdown-item" href="#">Hàn Quốc</a>
+                                <a class="dropdown-item" href="#">Hoa Ngữ</a>
+           
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropbtn" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>Chủ đề</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">EDM</a>
+                                <a class="dropdown-item" href="#">MUSIC FOR LOVE</a>
+                                <a class="dropdown-item" href="#">Valentine</a>
+                                <a class="dropdown-item" href="#">Cover & Mashup</a>
+                                <a class="dropdown-item" href="#">Wedding</a>
+                                <a class="dropdown-item" href="#">Bolero</a>
+                                <a class="dropdown-item" href="#">Thất Tình</a>
+                                <a class="dropdown-item" href="#">Acoustic</a>
+                                <a class="dropdown-item" href="#">Merry Christmas</a>
+                                <a class="dropdown-item" href="#">Nhạc Phim (OST)</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropbtn" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>Trợ giúp</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">About</a>
+                                <a class="dropdown-item" href="#">Support</a>
+                                <a class="dropdown-item" href="#">Advertising</a>
+                                <a class="dropdown-item" href="#">FAQ</a>
+                                <a class="dropdown-item" href="#">Report</a>
+                                <a class="dropdown-item" href="#">Staff</a>
+
+                            </div>
+                        </li>
+                        <!--
+                        <li class="nav-item active dropac">
+                                <a class="nav-link" href="#"><b>Community</b><span class="sr-only">(current)</span></a>
+                        </li>
+                        -->
+                        <!--TODO: this's disabled button-->
+                
+                        </ul>
+                        <!--TODO: form tìm kiếm-->
+
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Nhập nội dung cần tìm..." aria-label="Search">
+    <button class="btn btn-light my-2 my-sm-0" type="submit">Tìm kiếm</button>
+</form>
+        </div>
+    </div>
+</nav>
+<div style="padding-top:7px"></div>
+<div class="container" style="padding-top:10px; height: 55px;">
+        <div class="row" >
+            <div class="col-md-8 float-md-left">
+                <p class="" style="font-size:25px;">
+                     Trang chủ / Album / Album nổi bật
+                </p>
+            </div>
+            <div class="col-md-4 float-md-right" >
+                <!--TODO: đây là đăng ký-->
+                 <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-outline-primary float-md-right" data-toggle="modal" data-target="#myModal">
+        Đăng Nhập
+        </button>
+        
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        
+         <!-- Modal Header -->
+         <div class="modal-header">
+           <h3 class="modal-title">Đăng Nhập Thành Viên</h3>
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+         
+         <!-- Modal body -->
+         <div class="modal-body">
+             <a href="index_1.html">
+             <img src="image/dangnhap.png" alt="" width="100%" height="auto">
+            </a>
+         </div>
+         
+         <!-- Modal footer -->
+         <div class="modal-footer">
+                <h3>Bạn chưa có tài khoản?</h3>
+           <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">Đăng Ký</button>
+         </div>
+         
+        </div>
+        </div>
+        </div>
+        <!--end dang nhap-->
+        <div style="padding-right:3px" class="float-md-right">
+        <!--dang  ky-->
+                  <!-- Button to Open the Modal -->
+                  <button type="button" class="btn btn-outline-primary float-md-right" data-toggle="modal" data-target="#myModal1">
+                     Đăng Ký
+                   </button>
+                 
+                   <!-- The Modal -->
+                   <div class="modal fade" id="myModal1">
+                     <div class="modal-dialog modal-lg">
+                       <div class="modal-content">
+                       
+                         <!-- Modal Header -->
+                         <div class="modal-header">
+                           <h3 class="modal-title">Đăng Ký Thành Viên</h3>
+                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                         </div>
+                         
+                         <!-- Modal body -->
+                         <div class="modal-body">
+                                <img src="image/dangky.png" alt="" width="100%" height="auto">
+                         </div>
+                         
+                         <!-- Modal footer -->
+                         <div class="modal-footer">
+                             <h3>Bạn đã có tài khoản? Hãy</h3>
+                           <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal">Đăng Nhập</button>
+                         </div>
+                         
+                       </div>
+                     </div>
+                   </div>
+        <!--end dang ky-->
+        <div style="padding-right:3px" class="float-md-right"></div>
+        <!--bat dau chuyen doi ngon ngu-->
+        <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         VI
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+         <a class="dropdown-item" href="#">Tiếng VIệt (VI)</a>
+         <a class="dropdown-item" href="#">English (EN)</a>
+        </div>
+        <!--ket thuc chuyen doi ngon ngu-->
+        </div>
+        <!----
+                 <div class="float-md-right" style="padding-right:7px">
+                 <a href="index_dk.html" target="_blank" title="Click để vào để đăng ký" >
+                         <button type="button" class="btn btn-outline-primary float-md-right" href="index_dk.html" target="_blank">ĐĂNG KÝ</button>
+                         </a>
+                     </div>
+                         !-- Button to Open the Modal --
+                         <div style="padding:3px" class="float-md-right">
+        
+                         </div>
+                     !--TODO: đây là đăng nhập--
+                     <a href="index_dn.html" target="_blank" title="Click để vào để đăng nhập">
+                     <button type="button" class="btn btn-outline-primary float-md-right" href="index_dn.html" target="_blank">ĐĂNG NHẬP</button>
+                     </a>
+        </div>
+         </div>
+        ---->
+        </div>
+        </div>
+        </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col" >
+            <div>
+                <h3 >
+                        <a class="link" href="" title="Việt Nam">VIỆT NAM</a>
+                </h3>
+            </div>
+        </div>
+        <div class="col">
+            <h3 >
+                <a href="" title="Âu Mỹ" class="link">ÂU MỸ</a>
+            </h3>
+        </div>
+        <div class="col" >
+            <h3>
+                    <a href="" title="K-POP" class="link">K-POP</a>
+            </h3>
+        </div>
+        <div class="col">
+            <h3 >
+                <a href="" title="Quốc gia khác" class="link" style="font-size:27px ;padding: 3.5px 0px;">QUỐC GIA KHÁC ➽ </a>
+            </h3>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="margin-top: 15px">
+        <div class="col-3" style="background-color:rgb(255, 255, 255)">
+            <div class="sticky">
+            <div >
+                <h2 align="center" style="padding-top:5px ; color:rgb(90, 99, 179)">ALBUM</h2>
+            </div>
+            <div class="scroll" id="style-1">
+                <div class="force-overflow">
+            <h4>THỂ LOẠI</h4>
+            <ul style="list-style-type: none;">
+                <li>
+                    <a href="" title="Nhạc trẻ">Nhạc trẻ</a>
+                </li>
+                <li>
+                    <a href="" title="Nhạc Dance">Nhạc Dance</a>
+                </li>
+                <li>
+                    <a href="" title="Nhạc Bolero">Bolero</a>
+                </li>
+                <li>
+                    <a href="" title="Nhạc Rock">Rock</a>
+                </li>
+                <li>
+                    <a href="" title="Nhạc POP">POP</a>
+                </li>
+                <li>
+                    <a href="" title="Country">Country</a>
+                </li>
+                <li>
+                    <a href="" title="Rap / Hip Hop">Rap / Hip Hop</a>
+                </li>
+                <li>
+                    <a href="" title="Electronic">Electronic</a>
+                </li>
+                <li>
+                    <a href="" title="Nhạc Phim">Nhạc Phim</a>
+                </li>
+                <li>
+                    <a href="" title="Blues / Jazz">Blues / Jazz</a>
+                </li>
+                <li>
+                    <a href="" title="Nhạc Thiếu Nhi">Nhạc Thiếu Nhi</a>
+                </li>
+                <li>
+                    <a href="" title="Trance / House / Techno">Trance / House / Techno</a>
+                </li>
+                <li>
+                    <a href="" title="Nhạc Không Lời">Nhạc Không Lời</a>
+                </li>
+                <li>
+                    <a href="" title="Indie">Indie</a>
+                </li>
+                <li>
+                    <a href="" title="Folk">Folk</a>
+                </li>
+            </ul>
+            <h4>HÒA TẤU</h4>
+            <ul style="list-style-type:none">
+                <li>
+                    <a href="" title="Classical">Classical</a>
+                </li>
+                <li>
+                    <a href="" title="Piano">Piano</a>
+                </li>
+                <li>
+                    <a href="" title="Guitar">Guitar</a>
+                </li>
+                <li>
+                    <a href="" title="Violin">Violin</a>
+                </li>
+                <li>
+                    <a href="" title="Cello">Cello</a>
+                </li>
+                <li>
+                    <a href="" title="Saxophone">Saxophone</a>
+                </li>
+                <li>
+                    <a href="" title="Flute">Flute</a>
+                </li>
+                <li>
+                    <a href="" title="Đàn Tranh">Đàn Tranh</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-9" style="background-color:rgb(255, 255, 255); border-left:10px solid rgb(211, 210, 210)">
+            <div class="relative">
+            <h2  style="color: rgb(87, 93, 177)">ALBUM HOT</h2>
+            <a href="" title="A">A</a>
+            <a href="" title="B">B</a>
+            <a href="" title="C">C</a>
+            <a href="" title="D">D</a>
+            <a href="" title="E">E</a>
+            <a href="" title="F">F</a>
+            <a href="" title="G">G</a>
+            <a href="" title="H">H</a>
+            <a href="" title="I">I</a>  
+            <a href="" title="J">J</a>
+            <a href="" title="K">K</a>
+            <a href="" title="L">L</a>
+            <a href="" title="M">M</a>
+            <a href="" title="N">N</a>
+            <a href="" title="O">O</a>
+            <a href="" title="P">P</a>
+            <a href="" title="Q">Q</a>
+            <a href="" title="R">R</a>
+            <a href="" title="S">S</a>
+            <a href="" title="T">T</a>
+            <a href="" title="U">U</a>
+            <a href="" title="V">V</a>
+            <a href="" title="W">W</a>
+            <a href="" title="X">X</a>
+            <a href="" title="Y">Y</a>
+            <a href="" title="Z">Z</a>
+            </div>
+             <div class="row" style="padding-top:20px">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" title="The Power Of Music (The 4th Album Repackage)">
+                        <img width=180px src="image/The Power Of Music.jpg">
+                        <h6 style="margin:0">The Power Of Music (The 4th Album Repackage)</h6>
+                    </a>
+                    <a href="" title="EXO">EXO</a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" title="Wings">
+                        <img width=180px src="image/wings.jpg">
+                        <h6 style="margin:0">Wings</h6>
+                    </a>
+                    <a href="" title="BTS">BTS</a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" title="Hôn Anh">
+                        <img width=180px src="image/HonAnh.jpg">
+                        <h6 style="margin:0">Hôn Anh</h6>
+                    </a>
+                    <a href="" title="MIN">MIN</a>
+                </div>
+               <div class="col-lg-3 col-sm-6 col-xs-12"> 
+                        <a href="" title="LOVE YOURSELF 'Answer' (REPACKAGE)">
+                                <img width=180px src="image/LoveYourSelf.jpg">
+                                <h6 style="margin:0">LOVE YOURSELF 'Answer' (REPACKAGE)</h6>
+                            </a>
+                            <a href="" title="BTS">BTS</a>
+                </div>
+            </div>
+            <div class="row" style="padding-top:20px">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" title="Day By Day">
+                        <img width=180px src="image/DayByDay.jpg">
+                        <h6 style="margin:0">Day By Day (6th Mini Album)</h6>
+                    </a>
+                    <a href="" title="T-ARA" style="padding-bottom:50px">T-ARA</a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <a href="" title="Fantasy">
+                        <img width=180px src="image/Fantasy.jpg">
+                        <h6 style="margin:0">Fantasy (Mini Album)</h6>
+                    </a>
+                    <a href="" title="JBJ">JBJ</a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <a href="" title="Full Moon (4th Mini Album)">
+                                <img width=180px src="image/Fullmoon.jpg">
+                                <h6 style="margin:0">Full Moon (4th Mini Album)</h6>
+                            </a>
+                            <a href="" title="EXID">EXID</a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <a href="" title="Merry & Happy (Repackage)">
+                                    <img width=180px src="image/Merry_Happy.jpg">
+                                    <h6 style="margin:0">Merry & Happy (Repackage)</h6>
+                                </a>
+                            <a href="" title="TWICE">TWICE</a>
+                    </div>
+                </div>
+                <div class="row" style="padding-top:20px">
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                                <a href="" title="Như Lời Đồn (Single)">
+                                        <img width=180px src="image/NhuLoiDon.jpg">
+                                        <h6 style="margin:0">Như Lời Đồn (Single)</h6>
+                                    </a>
+                                    <a href="" title="Bảo Anh">Bảo Anh</a>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                                    <a href="" title="Square Up (EP)">
+                                            <img width=180px src="image/SquarUp.jpg">
+                                            <h6 style="margin:0">Square Up (EP)</h6>
+                                        </a>
+                                        <a href="" title="Black Pink">Black Pink</a>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                                    <a href="" title="Present (Mini Album)">
+                                            <img width=180px src="image/Present.jpg">
+                                            <h6 style="margin:0">Present (Mini Album)</h6>
+                                        </a>
+                                        <a href="" title="DIA">DIA</a>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-xs-12">
+                                    <a href="" title="Những Con Đàn Bà (Single)">
+                                            <img width=180px src="image/NhungConDanBa.jpg">
+                                            <h6 style="margin:0">Những Con Đàn Bà (Single)</h6>
+                                     </a>
+                                     <a href="" title="Blacka">Blacka,</a>
+                                     <a href="" title="CAM"> Cam,</a>
+                                     <a href="" title="Táo"> Táo,</a>
+                                     <a href="" title="Uyên Pím"> Uyên Pím</a>
+                            </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="../footer.html" width="100%" height="230px;" frameborder="0"></iframe>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

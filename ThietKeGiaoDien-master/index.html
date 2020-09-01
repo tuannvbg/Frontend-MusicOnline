@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link type="text/css" rel="stylesheet" href="css/dropdownmenu.css">
+    <link type="text/css" rel="stylesheet" href="css/item-fade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Nghe nhạc theo chủ đề</title>
+    <style>
+        #banner_nhac_theo_chu_de {
+            background-image: url("images/banner.jpg");
+            width: 100%;
+            height: 350px;
+        }
+
+        .row {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            /* margin-top: 15px; */
+            font-weight: 200;
+
+        }
+
+        .card {
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            width: 30%;
+            margin-bottom: 20px;
+
+        }
+
+        .card-body {
+            background-color: #ecf0f1;
+            /* background-color: aliceblue; */
+        }
+
+        hr {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .card a:hover {
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #222428;
+            height: 100px;
+            overflow: auto;
+        }
+        .card-text{
+            font-size: 1em;
+        }
+
+        .footer_cot1 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+
+        .footer_cot1 .left {
+            width: 40%;
+
+        }
+
+        .footer_cot1 .right {
+            color: white;
+        }
+
+        .cot2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top fixed-top" style="background-color: #f0f0f0;">
+        <div class="container">
+            <a class="navbar-brand disabled" href="../index.html">
+                <img src="images/logo-1.f26d59aa.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Music for Life
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!--TODO:THIS's dropdown menu-->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>TOP 100</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Nhạc Việt Nam</a>
+                            <a class="dropdown-item" href="#">Nhạc Âu Mỹ</a>
+                            <a class="dropdown-item" href="#">Nhạc Hàn Quốc</a>
+                            <a class="dropdown-item" href="#">Nhạc Hoa Ngữ</a>
+                            <a class="dropdown-item" href="#">Nhạc Châu Á</a>
+                            <a class="dropdown-item" href="#">Hòa tấu</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>Nghệ sỹ</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Việt Nam</a>
+                            <a class="dropdown-item" href="#">Châu Á</a>
+                            <a class="dropdown-item" href="#">Âu Mỹ</a>
+                            <a class="dropdown-item" href="#">Hàn Quốc</a>
+                            <a class="dropdown-item" href="#">Hoa Ngữ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>Album</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Việt Nam</a>
+                            <a class="dropdown-item" href="#">Châu Á</a>
+                            <a class="dropdown-item" href="#">Âu Mỹ</a>
+                            <a class="dropdown-item" href="#">Hàn Quốc</a>
+                            <a class="dropdown-item" href="#">Hoa Ngữ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b style="color:rgb(0, 174, 255);">Chủ đề</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="ThietKeGiaoDien-master/index.html" target="_blank">Tất cả chủ đề</a>
+                            <a class="dropdown-item" href="#">EDM</a>
+                            <a class="dropdown-item" href="#">MUSIC FOR LOVE</a>
+                            <a class="dropdown-item" href="#">Valentine</a>
+                            <a class="dropdown-item" href="#">Cover & Mashup</a>
+                            <a class="dropdown-item" href="#">Wedding</a>
+                            <a class="dropdown-item" href="#">Bolero</a>
+                            <a class="dropdown-item" href="#">Thất Tình</a>
+                            <a class="dropdown-item" href="#">Acoustic</a>
+                            <a class="dropdown-item" href="#">Merry Christmas</a>
+                            <a class="dropdown-item" href="#">Nhạc Phim (OST)</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>Trợ giúp</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">About</a>
+                            <a class="dropdown-item" href="#">Support</a>
+                            <a class="dropdown-item" href="#">Advertising</a>
+                            <a class="dropdown-item" href="#">FAQ</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                            <a class="dropdown-item" href="#">Staff</a>
+
+                        </div>
+                    </li>
+                    <!--
+                        <li class="nav-item active dropac">
+                                <a class="nav-link" href="#"><b>Community</b><span class="sr-only">(current)</span></a>
+                        </li>
+                        -->
+                    <!--TODO: this's disabled button-->
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+                <!--TODO: form tìm kiếm-->
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Nhập nội dung cần tìm..." aria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="padding-top:10px; height: 55px;">
+            <div class="row" >
+                <div class="col-md-8 float-md-left">
+                    <p class="" style="font-size:25px;">
+                       Trang Chủ / Chủ Đề / Tất Cả Chủ Đề
+                    </p>
+                </div>
+                <div class="col-md-4 float-md-right" >
+                    <!--TODO: đây là đăng ký-->
+                     <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-outline-primary float-md-right" data-toggle="modal" data-target="#myModal">
+            Đăng Nhập
+            </button>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+             <!-- Modal Header -->
+             <div class="modal-header">
+               <h3 class="modal-title">Đăng Nhập Thành Viên</h3>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+             
+             <!-- Modal body -->
+             <div class="modal-body">
+                 <a href="index_1.html">
+                 <img src="image/dangnhap.png" alt="" width="100%" height="auto">
+                </a>
+             </div>
+             
+             <!-- Modal footer -->
+             <div class="modal-footer">
+                    <h3>Bạn chưa có tài khoản?</h3>
+               <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">Đăng Ký</button>
+             </div>
+             
+            </div>
+            </div>
+            </div>
+            <!--end dang nhap-->
+            <div style="padding-right:3px" class="float-md-right">
+            <!--dang  ky-->
+                      <!-- Button to Open the Modal -->
+                      <button type="button" class="btn btn-outline-primary float-md-right" data-toggle="modal" data-target="#myModal1">
+                         Đăng Ký
+                       </button>
+                     
+                       <!-- The Modal -->
+                       <div class="modal fade" id="myModal1">
+                         <div class="modal-dialog modal-lg">
+                           <div class="modal-content">
+                           
+                             <!-- Modal Header -->
+                             <div class="modal-header">
+                               <h3 class="modal-title">Đăng Ký Thành Viên</h3>
+                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             </div>
+                             
+                             <!-- Modal body -->
+                             <div class="modal-body">
+                                    <img src="image/dangky.png" alt="" width="100%" height="auto">
+                             </div>
+                             
+                             <!-- Modal footer -->
+                             <div class="modal-footer">
+                                 <h3>Bạn đã có tài khoản? Hãy</h3>
+                               <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal">Đăng Nhập</button>
+                             </div>
+                             
+                           </div>
+                         </div>
+                       </div>
+            <!--end dang ky-->
+            <div style="padding-right:3px" class="float-md-right"></div>
+            <!--bat dau chuyen doi ngon ngu-->
+            <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             VI
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+             <a class="dropdown-item" href="#">Tiếng VIệt (VI)</a>
+             <a class="dropdown-item" href="#">English (EN)</a>
+            </div>
+            <!--ket thuc chuyen doi ngon ngu-->
+            </div>
+            <!----
+                     <div class="float-md-right" style="padding-right:7px">
+                     <a href="index_dk.html" target="_blank" title="Click để vào để đăng ký" >
+                             <button type="button" class="btn btn-outline-primary float-md-right" href="index_dk.html" target="_blank">ĐĂNG KÝ</button>
+                             </a>
+                         </div>
+                             !-- Button to Open the Modal --
+                             <div style="padding:3px" class="float-md-right">
+            
+                             </div>
+                         !--TODO: đây là đăng nhập--
+                         <a href="index_dn.html" target="_blank" title="Click để vào để đăng nhập">
+                         <button type="button" class="btn btn-outline-primary float-md-right" href="index_dn.html" target="_blank">ĐĂNG NHẬP</button>
+                         </a>
+            </div>
+             </div>
+            ---->
+            </div>
+            </div>
+            </div>
+
+    <!-- trang  chu de -->
+    <div class="container mt-5">
+        <!-- begin banner -->
+        <div class="row">
+            <div class="col col-sm-12 ">
+                <!-- banner nhac theo chu de -->
+                <div id="banner_nhac_theo_chu_de">
+
+                </div>
+
+            </div>
+        </div>
+        <!-- begin content -->
+        <div class="row  mt-2">
+            <div class="col col-sm-12">
+                <div>
+                    <h2 class="mt-3">ĐỀ XUẤT</h2>
+                </div>
+                <hr />
+                <!-- begin noi dung de xuat -->
+                <div class="row">
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/555e1711704ed04400cce99ffbccc8b1.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Lấy ý tưởng hoài niệm từ những cảm xúc xưa cũ cũng như mang lại cảm giác mới...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/dbf6a5e4f58d4487a36352ff2d03bea5.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Những bài hát được thể hiện nhiều trên màn ảnh và để lại ấn tượng cho...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/d0f7e500d9a338062095f7f66ed669ff_1516330401.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Nếu như ngày hôm nay bạn vẫn đang tự hỏi không biết nên nghe gì...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- bat dau them -->
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/de6f708c4c99f0c6bbcc8d0e85e59f35.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Những tình khúc xưa cũ gợi nhắc đến mỗi cung bậc cảm xúc trong ta. </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/85d991c244de59021815a700d7a24d25.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Tổng hợp những giọng ca xuất sắc đại diện cho các thế hệ ca sĩ...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/55a619ea7a0c39489ddf1f0430e01056.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Các playlist đặc biệt từ Zing MP3 thực hiện với nhiều màu sắc âm nhạc đa dạng.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- ket thuc them -->
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/d1c2738deec7efd1942a3027a1c436b0_1499828277.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Zing MP3 sẽ mang đến các ca khúc đang HOT nhất hiện nay trên thế giới...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/e92910699de0aeee9f1587e0425d8a7c_1514894974.png"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Đừng bỏ lỡ những ca khúc HIT đã từng gây sóng gió một thời.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/dexuat/f766f301706abd51957040cf1dedeaad_1510648555.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Dòng nhạc bất hủ của nền Âm Nhạc Việt Nam.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- begin THỂ LOẠI & TÂM TRẠNG -->
+        <div class="row  mt-2">
+            <div class="col col-sm-12">
+                <div class="dexuat">
+                    <h2>THỂ LOẠI & TÂM TRẠNG</h2>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/9a1d672fd82974a56bd81ef3267c74b6.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Những ca khúc Rap - Hip Hop cực sôi động và cực " Chất" của đường phố...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/bd2f63d5a86156eb9cb589f359f364ad.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Những sản phẩm âm nhạc ấn tượng trong năm 2017.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/e15c5c6c50ca2e7e1bd90376843f1ff9.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Đọc vị sở thích nghe nhạc của các Cung Hoàng Đạo.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/8bd949fa505b1f03cb0ede4585edc783.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Di sản nhạc Trịnh để lại cho đời là những bài hát sâu sắc với lời ca có khả...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/5f175eacf6c31ce0d971d6247191127c.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Đây là những playlist mà thần tượng của bạn nghe hàng ngày đấy...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/40442c4305db6f75a7c29a6c4f166995.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Khuấy động âm nhạc mạnh mẽ cùng "đại tiệc" rock trong chủ đề Rock N Roll...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/c5360ad3d2e28b5bb5f0d0930a6a6a6f_1499827454.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Ấm ấp cùng cảm giác dễ chịu với chất mộc của Acoustic.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/2ac9d9aa479519e1724db5b860373578_1499827968.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Tình yêu muôn đời nay luôn là nguồn cảm hứng bất tận, gắn liền với hàng triệu...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/6218e73c87f3a78aeea7292a63692e51.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Nhẹ nhàng và góp phần giải tỏa những căng thẳng mệt mỏi cho bạn.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/e81dd9eeed8d3ffba4f406d97f7fa702.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Hãy để cảm xúc bạn hòa theo giai điệu của "Những ngày mưa"
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/6327934eac9b32451ff11c814a81203a.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Vui lên đi và đừng nghĩ ngợi những muộn phiền quanh ta.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/56b199cb6f45279e44a6b689ee388b98.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Nhạc Hoa có sức hút lạ kỳ đối với những người có tâm trạng buồn hay cô đơn.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/9e2ecf9272cc8eecf7620d4a983c2eef.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Mỗi độ thu sang là thêm một nỗi niềm qua những giai điệu êm ả...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/900937927ec0a4d72993d21fd2598568.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Tổng hợp những ca sĩ Việt ở khắp nơi trên thế giới. </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/6d22f54a6efbd739047abc976acd5dbb_1499827538.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Trở lại với những ca khúc bất hủ của làng âm nhạc US-UK. </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/7ba6ddf4f3e18d90598c0c4ab6f5d895.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Hãy để Zing MP3 giúp bạn có một ngày mới tràn đầy năng lượng để khởi động...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/c228fa4424fa565857ef06336598afcc.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Tuyển tập những bài hát hay nhất của các nghệ sĩ Âu Mỹ. </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/702ed1b745f1b326f4fc07e8b60afea4_1499828300.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Tâm trạng không vui, hãy để những giai điệu buồn này tâm sự cùng bạn. </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/12b1529b9bdc7ddbc034c00e73870aba.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Hãy cùng Zing Mp3 trở lại với Nhạc Việt của những năm tháng bất hủ ấy nhé.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/d28ef98a1827d390296f2759555cc606_1499827932.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    K-Pop HIT, nơi dành riêng cho các tín đồ yêu thích âm nhạc K-Pop.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/7c95f7f7eb049f6d635df1df7a8c7284.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Tuyển tập những bài hát hay nhất của các nghệ sĩ Hàn Quốc.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/3f9d736a7318ad11731b1518eb4e5e5a_1499828419.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Nhạc Thúy Nga còn được biết với tên gọi là Thúy Nga Paris, là nhà tổ chức...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/95488ad8d45bd69ef83e9403c4114375_1499827707.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Thả mình vào không gian âm nhạc của những DJ, Producer nổi tiếng cùng EDM.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/09885d0170c745889eab0b1d09b10b28_1499827727.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    OST (Original Sound Track) là một phần không thể thiếu của các bộ phim.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/ce5799b258daba104f0ed1c095e5852b.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Âm nhạc tiếp thêm động lực cho bạn trong khoảng thời gian khó khăn...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/dc3b778b060fd4a3e91475b9d2dbe312_1499828387.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Chủ đề cùng các bài hát mới và hay nhất với từng độ tuổi, từng khoảnh khắc...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/fbcd59303c835b3ccc0328b7433722f8_1499828447.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Tuyển tập những bài hát hay nhất của các nghệ sỹ Việt Nam.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/3e04c514d8397c698d7f5bb9c186ee49_1499828315.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Giai điệu du dương trong những bản hòa tấu sẽ đưa bạn vào một không gian...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/1f8ea944241a435a2f2ccac2da63dcbb.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Những dòng nhạc mới mẻ và độc đáo từ giới Indie & Underground sẽ không làm...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/theloai/d54d074ae32eafc8a6e35fed958b3c0a.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Không ồn ào, đơn giản chỉ là âm nhạc cho những lúc bạn cần sự nhẹ nhàng...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- end the loai -->
+        <!-- begin HOẠT ĐỘNG -->
+        <div class="row  mt-2">
+            <div class="col col-sm-12">
+                <div class="dexuat">
+                    <h2>HOẠT ĐỘNG</h2>
+                </div>
+                <hr />
+                <!-- begin noi dung de xuat -->
+
+
+                <div class="row">
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/9270e8b0f10a302585cc23c5530ecb5a.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Trong những khoảnh khắc hạnh phúc nhất của chúng ta trên lễ đường trong ngày...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/6bc6a7c5553989a2a28e3abfca1c3e8c.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Những giai điệu nhẹ nhàng cùng với những bài luyện tập hy vọng sẽ giúp cho...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/1e8a106b249567119009a8149e1b77ff_1499827613.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Chọn cho mình một "gu" âm nhạc phù hợp nhất khi đang thưởng thức ly cafe...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/5093625c7d4ca529dd5919c90604f4a5.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Một chút âm nhạc cho bữa tối của bạn khi bên cạnh gia đình và người thân.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/ec682eed5d10e28750845710aad01550.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Cho cảm xúc thăng hoa cùng những ca khúc mà bạn yêu thích.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/3f60db1e9db4afe8e80b6389b2f9a503.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Cùng âm nhạc đến với những ngày cuối tuần thư giãn cùng bạn bè.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/446ca000fae2db7f8a1d5d7073c732c3_1499827694.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Vác ba lô lên, bỏ túi riêng cho mình những ca khúc để bắt đầu chuyến du lịch thôi.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/155328db1990ff79575ec7ce6e8cecdd.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Âm nhạc là một phần truyền cảm hứng cho những buổi tranh tài của Game thủ.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/444ad12fc2781c805fc80904b0f48e7a_1499828460.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Cùng âm nhạc đến với những ngày cuối tuần thư giãn cùng bạn bè.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/e776fa76156c50e4793a82a52b9d5dd6_1499827947.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Âm nhạc giúp bạn xua tan căng thẳng trong công việc thường ngày.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/705523a15bc369675fdfa415035a9a61.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Âm nhạc là thứ không thể thiếu trong bất cứ kì buổi tiệc nào.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/hoatdong/4067cb6221b0d41d7b2fab59881a4395_1499827801.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">Với âm điệu nhẹ nhàng, tập hợp nhiều màu sắc âm nhạc sẽ...
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- end HOẠT ĐỘNG -->
+        <!-- begin SỰ KIỆN -->
+        <div class="row  mt-2">
+            <div class="col col-sm-12">
+                <div class="dexuat">
+                    <h2>SỰ KIỆN</h2>
+                </div>
+                <hr />
+                <!-- begin noi dung de xuat -->
+
+
+                <div class="row">
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/su kien/f766f301706abd51957040cf1dedeaad_1514271731.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Zing Music Awards là giải thưởng âm nhạc thường niên do Zing MP3 tổ chức.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/su kien/310b98ade43043a069c3d3e9ee0c5766_1515485837.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Đến với chủ đề Top 100 bạn sẽ không cần phải tìm kiếm nhạc để nghe.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="images/su kien/8e5084944fde01f620522b7c16cb7ce7_1479380203.jpg"
+                                alt="">
+                            <div class="card-body">
+                                <span class="card-text">
+                                    Các playlist đặc biệt từ Zing MP3 thực hiện với nhiều màu sắc âm nhạc đa dạng.
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- end SỰ KIỆN -->
+</div>
+<iframe src="../footer.html" width="100%" height="230px;" frameborder="0"></iframe>
+
+    <!-- begin footer -->
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-4 footer_cot1">
+                    <div class="left">
+                        <img src="images/icon_zing_mp3_60.png" alt="">
+                    </div>
+                    <div class="right">
+                        <span>
+                            &copy; 2015 VNG Corporation
+                            Giấy phép MXH số 314/GP-BTTTT.
+                        </span>
+                    </div>
+                </div>
+                <div class="col col-sm-4">
+                    <ul class="cot2">
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <div class="col col-sm-4">
+                    <div>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-google-plus-square"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer> -->
+    <!-- end footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tìm kiếm kết quả</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body>
+    <!-- menu -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top fixed-top" style="background-color: #f0f0f0;">
+        <div class="container">
+            <a class="navbar-brand disabled" href="../index.html">
+                <img src="images/logo-1.f26d59aa.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Music for Life
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!--TODO:THIS's dropdown menu-->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>TOP 100</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Nhạc Việt Nam</a>
+                            <a class="dropdown-item" href="#">Nhạc Âu Mỹ</a>
+                            <a class="dropdown-item" href="#">Nhạc Hàn Quốc</a>
+                            <a class="dropdown-item" href="#">Nhạc Hoa Ngữ</a>
+                            <a class="dropdown-item" href="#">Nhạc Châu Á</a>
+                            <a class="dropdown-item" href="#">Hòa tấu</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>Nghệ sỹ</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Việt Nam</a>
+                            <a class="dropdown-item" href="#">Châu Á</a>
+                            <a class="dropdown-item" href="#">Âu Mỹ</a>
+                            <a class="dropdown-item" href="#">Hàn Quốc</a>
+                            <a class="dropdown-item" href="#">Hoa Ngữ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>Album</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Việt Nam</a>
+                            <a class="dropdown-item" href="#">Châu Á</a>
+                            <a class="dropdown-item" href="#">Âu Mỹ</a>
+                            <a class="dropdown-item" href="#">Hàn Quốc</a>
+                            <a class="dropdown-item" href="#">Hoa Ngữ</a>
+             
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>Chủ đề</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">EDM</a>
+                            <a class="dropdown-item" href="#">MUSIC FOR LOVE</a>
+                            <a class="dropdown-item" href="#">Valentine</a>
+                            <a class="dropdown-item" href="#">Cover & Mashup</a>
+                            <a class="dropdown-item" href="#">Wedding</a>
+                            <a class="dropdown-item" href="#">Bolero</a>
+                            <a class="dropdown-item" href="#">Thất Tình</a>
+                            <a class="dropdown-item" href="#">Acoustic</a>
+                            <a class="dropdown-item" href="#">Merry Christmas</a>
+                            <a class="dropdown-item" href="#">Nhạc Phim (OST)</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <b>Trợ giúp</b>
+                        </a>
+                        <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">About</a>
+                            <a class="dropdown-item" href="#">Support</a>
+                            <a class="dropdown-item" href="#">Advertising</a>
+                            <a class="dropdown-item" href="#">FAQ</a>
+                            <a class="dropdown-item" href="#">Report</a>
+                            <a class="dropdown-item" href="#">Staff</a>
+                          
+                        </div>
+                    </li>
+                    <!--
+                        <li class="nav-item active dropac">
+                                <a class="nav-link" href="#"><b>Community</b><span class="sr-only">(current)</span></a>
+                        </li>
+                        -->
+                    <!--TODO: this's disabled button-->
+                   
+                </ul>
+                <!--TODO: form tìm kiếm-->
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Nhập nội dung cần tìm..." aria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="padding-top:10px; height: 55px;">
+            <div class="row" >
+                <div class="col-md-8 float-md-left">
+                    <p class="" style="font-size:25px;">
+                     Trang Chủ / Tìm Kiếm / Tìm kiếm cho {từ khóa}
+                    </p>
+                </div>
+                <div class="col-md-4 float-md-right" >
+                    <!--TODO: đây là đăng ký-->
+                     <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-outline-primary float-md-right" data-toggle="modal" data-target="#myModal">
+            Đăng Nhập
+            </button>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+             <!-- Modal Header -->
+             <div class="modal-header">
+               <h3 class="modal-title">Đăng Nhập Thành Viên</h3>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+             
+             <!-- Modal body -->
+             <div class="modal-body">
+                 <a href="index_1.html">
+                 <img src="image/dangnhap.png" alt="" width="100%" height="auto">
+                </a>
+             </div>
+             
+             <!-- Modal footer -->
+             <div class="modal-footer">
+                    <h3>Bạn chưa có tài khoản?</h3>
+               <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal1">Đăng Ký</button>
+             </div>
+             
+            </div>
+            </div>
+            </div>
+            <!--end dang nhap-->
+            <div style="padding-right:3px" class="float-md-right">
+            <!--dang  ky-->
+                      <!-- Button to Open the Modal -->
+                      <button type="button" class="btn btn-outline-primary float-md-right" data-toggle="modal" data-target="#myModal1">
+                         Đăng Ký
+                       </button>
+                     
+                       <!-- The Modal -->
+                       <div class="modal fade" id="myModal1">
+                         <div class="modal-dialog modal-lg">
+                           <div class="modal-content">
+                           
+                             <!-- Modal Header -->
+                             <div class="modal-header">
+                               <h3 class="modal-title">Đăng Ký Thành Viên</h3>
+                               <button type="button" class="close" data-dismiss="modal">&times;</button>
+                             </div>
+                             
+                             <!-- Modal body -->
+                             <div class="modal-body">
+                                    <img src="image/dangky.png" alt="" width="100%" height="auto">
+                             </div>
+                             
+                             <!-- Modal footer -->
+                             <div class="modal-footer">
+                                 <h3>Bạn đã có tài khoản? Hãy</h3>
+                               <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal">Đăng Nhập</button>
+                             </div>
+                             
+                           </div>
+                         </div>
+                       </div>
+            <!--end dang ky-->
+            <div style="padding-right:3px" class="float-md-right"></div>
+            <!--bat dau chuyen doi ngon ngu-->
+            <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             VI
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+             <a class="dropdown-item" href="#">Tiếng VIệt (VI)</a>
+             <a class="dropdown-item" href="#">English (EN)</a>
+            </div>
+            <!--ket thuc chuyen doi ngon ngu-->
+            </div>
+            <!----
+                     <div class="float-md-right" style="padding-right:7px">
+                     <a href="index_dk.html" target="_blank" title="Click để vào để đăng ký" >
+                             <button type="button" class="btn btn-outline-primary float-md-right" href="index_dk.html" target="_blank">ĐĂNG KÝ</button>
+                             </a>
+                         </div>
+                             !-- Button to Open the Modal --
+                             <div style="padding:3px" class="float-md-right">
+            
+                             </div>
+                         !--TODO: đây là đăng nhập--
+                         <a href="index_dn.html" target="_blank" title="Click để vào để đăng nhập">
+                         <button type="button" class="btn btn-outline-primary float-md-right" href="index_dn.html" target="_blank">ĐĂNG NHẬP</button>
+                         </a>
+            </div>
+             </div>
+            ---->
+            </div>
+            </div>
+            </div>
+    <!-- end menu -->
+
+    <div class="container mt-5">
+        <!-- <div class="row mt-5">
+            <div class="col col-sm-12">
+                <a href="https://log.adtimaserver.vn/track/click?params=12Me5Rrg2eP1_ot9iBYugz4FTGe7FLwzhH9fFhqh4I7veIo_QCNihj0pJf2zys3pJYVJb1vnpnEuJVPzmJJreeCyh-hXrN3nin2-xWsd7aMQAuV_cGPETdf_4gdSON45P8VFPkZ8GWv8lVfqfr87IG79BtmDapdvILCG7H5ufcPF_0VER2guT7OC8jsrlrahiK1a7A&uid=2000.2f2411e1535db803e14c.1540528668566.66ab13ab&trace=2225533648192136235.1862062179532364954&redirectUrl=https%3A%2F%2Ftiki.vn%2Fchuong-trinh%2Fbitis-hunter%3Futm_source%3Dadtima-traffic%26utm_medium%3Ddisplay%26utm_campaign%3DLS_LS180409-W&aid=3349948d796f3feb58d21257e612bf3f">
+                    <img src="images/banner.jpg" width="100%" class="responsive-img" alt="">
+                </a>
+
+            </div>
+        </div> -->
+        <div class="row mt-3">
+            <!-- begin cot trai -->
+            <div class="col col-sm-8">
+                <div class="card">
+                    <div class="card-header" style="padding: 0px;">
+                        <ul class="nav nav-tabs lockq">
+                            <li class="nav-item">
+                                <a class="nav-link" id="active" href="#"> Tất cả</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Playlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Video</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample" href="#">
+                                    Lọc kết quả</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <ul class="list-group" id="collapse">
+                                <li class="list-group-item">
+                                    <span class="loc"> Tìm theo</span>
+                                    <a href="#"><span>Mặc định</span></a>
+                                    <a href="#"><span>Tiêu đề</span></a>
+                                    <a href="#"><span>Tên ca sĩ</span></a>
+                                    <a href="#"><span>Tên nhạc </span></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="loc">Sắp xếp theo</span>
+                                    <a href="#"><span>Mặc định</span></a>
+                                    <a href="#"><span>Nghe nhiều nhất</span></a>
+                                    <a href="#"><span>Mới nhất</span></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="loc">Lọc theo</span>
+                                    <a href="#"><span>Official</span></a>
+                                    <a href="#"><span>Có lyrics</span></a>
+                                    <a href="#"><span>Hits</span></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <span class="loc">Thể loại</span>
+                                    <a href="#"><span> Việt Nam</span></a>
+                                    <a href="#"><span>Âu Mỹ</span></a>
+                                    <a href="#"><span>Châu Á</span></a>
+                                    <a href="#"><span>Hòa Tấu</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h4>nhac viet có 284 kết quả</h4>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="media mt-3 ml-3">
+                                <img class="align-self-center mr-3" src="images/23679977f479e46a62397b8b4beea3d8_1422770056.jpg"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Nắng Xuân Hồng (Gala Nhạc Việt 3) - Thủy Tiên</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trẻ</p>
+                                    <p>13:12 28/12/2017</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+                            <li class="media ml-3">
+                                <img class="align-self-center mr-3" src="images/d11590f4a82d2333e60b6f97f6cf8fe5_1440496757.png"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Nhạc Việt Theo Năm Tháng (Mashup) - ALIEN.S</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trẻ</p>
+                                    <p>17:02 25/08/2015</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+                            <li class="media ml-3">
+                                <img class="align-self-center mr-3" src="images/fb71d72831219ef9716a539353696ae9_1479866576.jpg"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Nét Nhạc Viết Dở - Hồng Dũng ((Trữ Tình))</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trữ Tình • Lượt nghe: 100,663</p>
+                                    <p>09:01 23/11/2016</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+                            <li class="media ml-3">
+                                <img class="align-self-center mr-3" src="images/96dcc6f62390235e54cdb5cb5e77055b_1388211767.jpg"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Con Bướm Xuân (Gala Nhạc Việt 3) - Yến Trang , Yến Nhi</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trẻ</p>
+                                    <p>13:19 28/12/2013</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+                            <li class="media ml-3">
+                                <img class="align-self-center mr-3" src="images/26fdb70568063e7ed2a049fc945bd30d_1389370274.jpg"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Du Xuân (Gala Nhạc Việt 3) - Thu Thủy</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trẻ</p>
+                                    <p>18:20 10/01/2014</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+
+                            <li class="media ml-3">
+                                <img class="align-self-center mr-3" src="images/156005c5baf40ff51a327f1c34f2975b_1423958965.jpg"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Khúc Xuân (Gala Nhạc Việt) - Dương Triệu Vũ , Thanh Thảo</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trẻ</p>
+                                    <p>14:54 13/02/2015</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+
+                            <li class="media ml-3">
+                                <img class="align-self-center mr-3" src="images/0cd48050a7a3562f8a92f53559382767_1410492621.jpg"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Gặp Mẹ Trong Mơ (Gala Nhạc Việt 4)</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trẻ</p>
+                                    <p>18:38 15/08/2014</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+
+                            <hr>
+                            <li class="media ml-3">
+                                <img class="align-self-center mr-3" src="images/9a387851195cca21fee103f871f234bd_1465457609.jpg"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Zing Confessions (Kỳ 44: Nhóm Nhạc Việt Nam)</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trẻ</p>
+                                    <p>17:12 06/01/2014</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+
+                            <hr>
+                            <li class="media ml-3">
+                                <img class="align-self-center mr-3" src="images/08742d652d5b25ae446cb0e05793e5fb_1408159797.jpg"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        <h5>Lấp Lánh Ước Mơ (Gala Nhạc Việt 4 - Những Giấc Mơ Trở V</h5>
+                                    </a>
+                                    <p>Thể loại: Việt Nam, Nhạc Trẻ</p>
+                                    <p>13:12 28/12/2015</p>
+                                </div>
+                                <div class="media-footer align-self-center mr-3">
+                                    <a href="#" title="download"><i class="fas fa-download"></i></a>
+                                    <a href="#" title="plus"><i class="fas fa-plus"></i></a>
+                                    <a href="#" title="share"><i class="fas fa-share-alt"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>
+                    <!-- begin pagination -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- end pagiantion -->
+                </div>
+            </div>
+            <!-- end cot trai -->
+            <!-- begin cot phai  -->
+            <div class="col col-sm-4">
+
+                <!-- tin tuc -->
+                <div class="card">
+                    <div class="card-header " style="padding: 9px;">
+                        <h5>TIN TỨC ÂM NHẠC</h5>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <a href="#"><img src="images/maxresdefaultâdf.jpg" width="100%" height="auto" class="responsive-img mt-3"
+                                    alt=""></a>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="media mt-3">
+                                <img class="align-self-center mr-3" src="images/44515337_2158121101128449_2151660005479153664_n.jpg"
+                                    width="40%" alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        Ca sĩ Thằng điên chia sẻ về vợ hot girl và những ngày thiếu tiền
+                                    </a>
+
+                                </div>
+
+                            </li>
+                            <li class="media mt-3">
+                                <img class="align-self-center mr-3" src="images/10E4FAADFB034490A6D0F6B5F50D7133_thumb.jpg"
+                                    width="40%" alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        MV mới của Bảo Thy: Chất lượng bị che lấp vì màn quảng cáo quá đà
+                                    </a>
+
+                                </div>
+
+                            </li>
+                            <li class="media mt-3">
+                                <img class="align-self-center mr-3" src="images/nhungstreamernoitieng4.jpg" width="40%"
+                                    alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        Tác giả hit 'Thằng điên' bức xúc vì bị cáo buộc đạo nhạc
+                                    </a>
+
+                                </div>
+
+                            </li>
+
+                            <li class="media mt-3">
+                                <img class="align-self-center mr-3" src="images/dungnhuthoiquene1525401451397.jpg"
+                                    width="40%" alt="Generic placeholder image">
+                                <div class="media-body align-self-center">
+                                    <a href="#">
+                                        'Đừng như thói quen' đạt 300 triệu lượt nghe, sánh ngang các siêu hit
+                                    </a>
+
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- the loai -->
+                <div class="card mt-3">
+                    <div class="card-header" style="padding: 9px;">
+                        <h5>THỂ LOẠI</h5>
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <a href="#"> <img src="images/9a1d672fd82974a56bd81ef3267c74b6.jpg" class="mt-3" width="100%"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/bd2f63d5a86156eb9cb589f359f364ad.jpg" class="mt-3" width="100%"
+                                    alt=""></a>
+                        </div>
+
+                        <div>
+                            <a href="#"><img src="images/8bd949fa505b1f03cb0ede4585edc783.jpg" class="mt-3" width="100%"
+                                    alt=""></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/fbcd59303c835b3ccc0328b7433722f8_1499828447.jpg" class="mt-3"
+                                    width="100%" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div class="card mt-3" style="border: none;">
+
+                    <div class="card-body">
+                        <a href="https://log.adtimaserver.vn/track/click?params=b9uWdTpg2eNNBgt9iBYuO-YFTGe7FAT7FL_fFhoZeH6PeIo_-NtSxj0pJUV7em1pJYXx10sHZvEundtTGJNrVkap1Iblc1fUzrOr1oPrlcCiHBhiktwn8lE3f-LB6iZrfJ0eh5Tf6lep0kGpq3yVK6g4CcjBM8oXqZLdnkRqIKxkx29QjN4rv-hWqM6bbSZYrUitWuw&uid=2000.2f2411e1535db803e14c.1540528668566.66ab13ab&trace=2272945474374319211.1294024223168617624&redirectUrl=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN135802.2040302ADTIMA%2FB8709353.130953248%3Bdc_trk_aid%3D429691855%3Bdc_trk_cid%3D107624006%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D&aid=3349948d796f3feb58d21257e612bf3f">
+                            <img src="images/quangcao/3582d49b-c6b3-4558-96fd-c7c9bdf1f94c.jpg" width="100%" class="responsive-img"
+                                alt="">
+
+                        </a>
+
+
+                    </div>
+                    <div class="card-body mt-3" style="border: none;">
+                        <a href="https://log.adtimaserver.vn/track/click?params=12Me5Rrg2eP1_ot9iBYugz4FTGe7FLwzhH9fFhqh4I7veIo_QCNihj0pJf2zys3pJYVJb1vnpnEuJVPzmJJreeCyh-hXrN3nin2-xWsd7aMQAuV_cGPETdf_4gdSON45P8VFPkZ8GWv8lVfqfr87IG79BtmDapdvILCG7H5ufcPF_0VER2guT7OC8jsrlrahiK1a7A&uid=2000.2f2411e1535db803e14c.1540528668566.66ab13ab&trace=2225533648192136235.1862062179532364954&redirectUrl=https%3A%2F%2Ftiki.vn%2Fchuong-trinh%2Fbitis-hunter%3Futm_source%3Dadtima-traffic%26utm_medium%3Ddisplay%26utm_campaign%3DLS_LS180409-W&aid=3349948d796f3feb58d21257e612bf3f">
+                            <img src="images/quangcao/a4ba8358-27fc-48c4-8191-afa450ec9899.jpg" width="100%" class="responsive-img"
+                                alt="">
+                        </a>
+
+                    </div>
+                </div> -->
+            </div>
+            <!-- end cot phai -->
+        </div>
+    </div>
+
+
+
+    <iframe src="../footer.html" width="100%" height="230px;" frameborder="0"></iframe>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

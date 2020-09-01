@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a:hover{
+    text-decoration: none;
+}
+.lockq a{
+    font-weight: 700;
+    color: black;
+}
+h4{
+    background-color: #f0f0f0;
+    font-size: 1.15em;
+    padding: 10px;
+    font-weight: 350;
+
+}
+.card-body{
+    margin: 0px;
+    padding: 0px;
+}
+.list-group, .list-group-item{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+.list-unstyled :hover{
+    background-color: #f0f0f0;
+}
+
+.lockq #active{
+    background-color: black;
+    color: white;
+}
+
+
+.list-unstyled p,h5{
+    display: block;
+    margin: 0px;
+}
+.media-footer i{
+    margin: 5px;
+}
+.list-unstyled a{
+    color: black;
+}
+#collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#collapse span{
+    display: block;
+}
+.loc{
+    font-weight:600; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nghe nhạc online, trực tuyến miễn phí.</title>
+    <link rel="shortcut icon" href="image/logo.ico"> 
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/dropdownmenu.css">
+    <link type="text/css" rel="stylesheet" href="css/item-fade.css">
+    <link type="text/css" rel="stylesheet" href="owl/css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="owl/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body style="background-color: #1C1C1C">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top fixed-top">
+            <div class="container">
+                <a class="navbar-brand disabled" href="index.html">
+                    <img src="image/logo-1.f26d59aa.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Music for Life
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <!--TODO:THIS's dropdown menu-->
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropbtn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>TOP 100</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Nhạc Việt Nam</a>
+                                <a class="dropdown-item" href="#">Nhạc Âu Mỹ</a>
+                                <a class="dropdown-item" href="#">Nhạc Hàn Quốc</a>
+                                <a class="dropdown-item" href="#">Nhạc Hoa Ngữ</a>
+                                <a class="dropdown-item" href="#">Nhạc Châu Á</a>
+                                <a class="dropdown-item" href="#">Hòa tấu</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                        <a class="nav-link dropbtn" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>Nghệ sỹ</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Việt Nam</a>
+                                <a class="dropdown-item" href="#">Châu Á</a>
+                                <a class="dropdown-item" href="#">Âu Mỹ</a>
+                                <a class="dropdown-item" href="#">Hàn Quốc</a>
+                                <a class="dropdown-item" href="#">Hoa Ngữ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropbtn" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>Album</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Việt Nam</a>
+                                <a class="dropdown-item" href="#">Châu Á</a>
+                                <a class="dropdown-item" href="#">Âu Mỹ</a>
+                                <a class="dropdown-item" href="#">Hàn Quốc</a>
+                                <a class="dropdown-item" href="#">Hoa Ngữ</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item disabled" href="#">Comming soon...</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropbtn" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>Chủ đề</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">EDM</a>
+                                <a class="dropdown-item" href="#">MUSIC FOR LOVE</a>
+                                <a class="dropdown-item" href="#">Valentine</a>
+                                <a class="dropdown-item" href="#">Cover & Mashup</a>
+                                <a class="dropdown-item" href="#">Wedding</a>
+                                <a class="dropdown-item" href="#">Bolero</a>
+                                <a class="dropdown-item" href="#">Thất Tình</a>
+                                <a class="dropdown-item" href="#">Acoustic</a>
+                                <a class="dropdown-item" href="#">Merry Christmas</a>
+                                <a class="dropdown-item" href="#">Nhạc Phim (OST)</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropbtn" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>Help</b>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">About</a>
+                                <a class="dropdown-item" href="#">Support</a>
+                                <a class="dropdown-item" href="#">Advertising</a>
+                                <a class="dropdown-item" href="#">FAQ</a>
+                                <a class="dropdown-item" href="#">Report</a>
+                                <a class="dropdown-item" href="#">Staff</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item disabled" href="#">Comming soon...</a>
+                            </div>
+                        </li>
+                        <!--
+                        <li class="nav-item active dropac">
+                                <a class="nav-link" href="#"><b>Community</b><span class="sr-only">(current)</span></a>
+                        </li>
+                        -->
+                        <!--TODO: this's disabled button-->
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Comming soon...</a>
+                        </li>
+                        </ul>
+                        <!--TODO: form tìm kiếm-->
+
+<form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Nhập nội dung cần tìm..." aria-label="Search">
+    <button class="btn btn-light my-2 my-sm-0" type="submit">Tìm kiếm</button>
+</form>
+        </div>
+    </div>
+</nav>
+<div style="padding-top:7px"></div>
+<div class="container">
+    <!--TODO: đây là đăng ký-->
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-primary float-md-right" data-toggle="modal" data-target="#dangky">ĐĂNG KÝ</button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="dangky">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Đăng ký thành viên <span style="color:red"> MUSIC FOR LIFE</span></h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+            <form>
+<!---
+                <div class="form-group">
+                <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="">First and last name</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nhập tên bạn...">
+                        <input type="text" class="form-control" placeholder="Nhập họ bạn...">
+                </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Giới tính</label>
+                        </div>
+                        <select class="custom-select custom-select-md">
+                            <option selected>Nhấn vào để chọn...</option>
+                            <option value="1">Nam</option>
+                            <option value="2">Nữ</option>
+                            <option value="3">Không công khai</option>
+                        </select>
+                    </div>
+                </div>
+-->
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Email</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Nhập email của bạn...">
+                    </div>
+                </div>
+                <div class="form-group">
+                        <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Nhập tài khoản</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Tên tài khoản muốn tạo...">
+                        </div>
+                </div>
+                <div class="form-group">
+                        <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Mật khẩu</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Nhập mật khẩu...">
+                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Nhập lại mật khẩu</span>
+                        </div>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Nhập lại mật khẩu...">
+                        </div>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck11">
+                    <label class="form-check-label" for="exampleCheck1">Tôi chấp nhận những điều khoản sử dụng</label>
+                </div>
+    
+                <button type="button" class="btn btn-primary" data-dismiss="modal" >Đăng Ký</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+                </form>
+    
+            </div>
+    
+    
+            <!-- Modal footer -->
+                <div class="modal-footer">
+                    <h5>Nếu bạn đã có tài khoản hãy nhấn</h5>
+                    <button type="button" class="btn btn-outline-success" data-dismiss="modal" data-toggle="modal" data-target="#dangnhap">Đăng nhập</button>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- Button to Open the Modal -->
+    <div style="padding:5px" class="float-md-right"></div>
+<!--TODO: đây là đăng nhập-->
+<button type="button" class="btn btn-primary float-md-right" data-toggle="modal" data-target="#dangnhap">ĐĂNG NHẬP</button>
+<!-- The Modal -->
+<div class="modal fade" id="dangnhap">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h4 class="modal-title">Đăng nhập vào <span style="color:red"> MUSIC FOR LIFE</span></h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-header">
+            <h5 class="modal-title">Đăng nhập qua<span style="color:red"></span></h5>
+            <button type="button" class="btn btn-primary">
+                <img style="width:25px;height:25px;" class="img-thumbnail" src="image/loginFrom/Facebook_icon_2013.svg.png">
+                Facebook
+            </button>
+            <button type="button" class="btn btn-danger">
+                <img style="width:26px;height:26px;" class="img-thumbnail" src="image/loginFrom/new-google-favicon-512.png">
+                Google
+            </button>
+
+            </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+        <form>
+            <div class="form-group">
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Tài khoản</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Nhập tài khoản của bạn...">
+                    </div>
+            </div>
+            <div class="form-group">
+                    <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Mật khẩu</span>
+                    </div>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Nhập mật khẩu...">
+                    </div>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Lưu mật khẩu</label>
+            </div>
+
+            <button type="button" class="btn btn-success" data-dismiss="modal">Đăng nhập</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+            </form>
+
+        </div>
+
+
+        <!-- Modal footer -->
+            <div class="modal-footer">
+                <h5>Nếu bạn chưa có tài khoản hãy nhấn</h5>
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#dangky">Đăng ký</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<div style="padding:22px" class="container"></div>
+<div class="container">
+    <div class="col-md-8">
+        <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="playeraudio.html" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="owl/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="owl/js/autoplay.js"></script>
+<script  src="js/index.js"></script>
+</body>
+</html>

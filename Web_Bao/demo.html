@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/jquery.shorten.1.0.js"></script>
+
+	 <style type="text/css">
+         table.two {border-collapse:separate;}
+         td.b {
+            border-style:none;
+            border-width:3px;
+            background-color: #E9E9E9;
+            padding:10px;
+         }
+         td.a {
+            border-style:none;
+            border-width:3px;
+            background-color: ##FFFFFF;
+            padding:10px;
+
+         }
+      </style>
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-12">
+			<button class="btn" data-toggle="collapse" data-target="#target1">
+  				<img src="font/glyphicons_free/glyphicons/png/glyphicons-433-plus.png" width="14px"> Thêm vào</button>
+			<button class="btn" data-toggle="collapse" data-target="#target2">
+				<img src="font/glyphicons_free/glyphicons/png/glyphicons-267-flag.png" width="14px" > Phản hồi</button>
+			<button class="btn" data-toggle="collapse" data-target="#target3">
+				<img src="font/glyphicons_free/glyphicons/png/glyphicons-201-download.png" width="14px"> Download</button>
+			<button class="btn" data-toggle="collapse" data-target="#target4">
+				<img src="font/glyphicons_free/glyphicons/png/glyphicons-223-share.png" width="14px"> Chia sẻ</button>
+			<button class="btn" data-toggle="collapse" data-target="#target5">
+				<img src="font/glyphicons_free/glyphicons/png/glyphicons-77-headphones.png" width="14px"> Nghe audio</button>
+			<button class="btn btn-light" data-toggle="collapse" data-target="#target6">
+				<img src="font/glyphicons_free/glyphicons/png/glyphicons-77-headphones.png" alt="Hello" width="14px" > 123456789 </button>
+		</div>
+		<div class="row" style="max-width: 500px;">
+   			<div class="col">
+   				<br>	
+      			<div class="collapse myTarget" id="target1" >
+         			<div class="card card-body" style="border-style: none;">
+            			<form>
+            				<div class="border-bottom">
+            					<h4 style="color: #2F56BA">Thêm vào Playlist</h4>
+            				</div>
+            				<div class="border-bottom">
+            					<br>
+            					<p style="margin-left: 20px">
+            						<img src="font/glyphicons_free/glyphicons/png/glyphicons-13-heart.png">			Bài hát yêu thích
+         						<button class="btn" style="position: relative;left: 170px">Thêm</button>
+            					</p>
+            				</div>
+            				<div class="border-bottom">
+            					<br>
+            					<form>
+   									<div class="form-inline">
+      									<div class="col-6 col-sm-4 form-group">     							
+         									<input type="text" class="form-control" placeholder="Tạo Playlist">    					
+         								</div>
+         								<button class="btn" style="position: relative;left: 200px">Thêm</button>	
+   									</div>
+								</form>
+								<br>
+            				</div>
+            			</form>
+         			</div>
+      			</div>
+   			</div>
+  		</div>
+  		<div class="row" style="max-width: 500px">
+   			<div class="col">
+      			<div class="collapse myTarget" id="target2">
+         			<div class="card card-body" style="border-style: none;">
+            			<form>
+            				<div class="border-bottom">
+            					<h4 style="color: #2F56BA">Phản hồi</h4>
+            				</div>
+            				<div class="border-bottom">
+            					<br>
+            					<form>
+   									<div class="form-inline">
+      									<div class="col-6 col-sm-4 form-group">     							
+         									<input type="text" class="form-control" placeholder="Số điện thoại">
+         								</div>	
+   									</div>
+								</form>
+								<br>
+            				</div>
+            				<div>
+            					<br>
+            					<form>
+   									<div class="form-group" style="margin-left: 10px ">
+      									<label for="myTextarea2">Nội dung phản hồi</label>
+      									<textarea id="myTextarea2" class="form-control" rows="3"></textarea>
+   									</div>
+								</form>
+								<button class="btn" style="position: relative;left: 290px">Gửi phản hồi</button>
+								<br>
+							</div>
+            			</form>
+         			</div>
+      			</div>
+   			</div>
+  		</div>
+  		<div class="row" style="max-width: 500px">
+   			<div class="col">
+      			<div class="collapse myTarget" id="target3">
+         			<div class="card card-body" style="border-style: none;">
+            			<form>
+            				<div class="border-bottom">
+            					<h4 style="color: #2F56BA">Download</h4>
+            				</div>
+            				<div class="border-bottom">
+            					<br>
+            					<p style="margin-left: 20px">
+            						Nhạc tiêu chuẩn (128 kbps)
+         						<button class="btn" style="position: relative;left: 119px">Download</button>
+            					</p>
+            				</div>
+            				<div class="border-bottom">
+            					<br>
+            					<p style="margin-left: 20px">
+            						Chất lượng cao (320 kbps)
+         						<button class="btn" style="position: relative;left: 125px">Download</button>
+            					</p>
+            				</div><div class="border-bottom">
+            					<br>
+            					<p style="margin-left: 20px">
+            						Chất lượng CD (lossless)
+         						<button class="btn" style="position: relative;left: 138px">Download</button>
+            					</p>
+            				</div>	
+            			</form>
+         			</div>
+      			</div>
+   			</div>
+  		</div>
+  		<div class="row" style="max-width: 500px">
+   			<div class="col">		
+      			<div class="collapse myTarget" id="target4">
+         			<div class="card card-body" style="border-style: none;">
+            			<form>
+            				<div class="border-bottom">
+            					<h4 style="color: #2F56BA">Chia sẻ</h4>
+            				</div>
+            				<div class="border-bottom">
+            					<br>
+            					<p style="margin-left: 20px">
+            						Zalo
+         						<button class="btn" style="position: relative;left: 290px">Chia sẻ</button>
+            					</p>
+            				</div>
+            				<div class="border-bottom">
+            					<br>
+            					<p style="margin-left: 20px">
+            						Facebook
+         						<button class="btn" style="position: relative;left: 255px">Chia sẻ</button>
+            					</p>
+            				</div><div class="border-bottom">
+            					<br>
+            					<p style="margin-left: 20px">
+            						Link
+         						<button class="btn" style="position: relative;left: 291px">Chia sẻ</button>
+            					</p>
+            				</div>	
+            			</form>
+         			</div>
+      			</div>
+   			</div>
+  		</div>
+  		<table class="two">
+        <tr><td class="b">
+        	<div class="border-bottom" style="margin-left: 50px">
+        		<h3 style="color: #2F56BA">Lời bài hát</h3>
+            	<div style="font-size: 12px; margin-left: 500px; ">
+            		<p>Đóng góp: mp3</p>
+            	</div>
+            </div>
+        	<div class="lyric" style="font-size: 14px; margin-left: 50px">
+  			<br>Ngày hôm nay, mình xa nhau được mấy ngày 
+			<br>Tại sao anh lại thế này, lệ anh sao cứ tuôn chảy 
+			<br>Em vẫn yêu ai đúng không vậy 
+			<br>Đừng nói anh đã chia tay, sẽ chẳng phải với anh đấy. 
+			<br>Anh phải vứt bỏ tình cảm vốn có, đong đầy bao nỗi lo 
+			<br>Phải từ bỏ thật nhiều thói quen ta ngày đó 
+			<br>Để em bên cạnh người khác đó làm tất cả chẳng đắn đo 
+			<br>Tại sao khi gặp lại nước mắt em vẫn rơi 
+			<br>
+			<br>Cuộc sống em ổn không, có giống em hi vọng 
+			<br>Thấy em khóc, lòng phải chăng khổ tâm điều gì phải không. 
+			<br>Anh vẫn luôn ở đây, đừng đớn đau như vậy, đừng ghì chặt 
+			<br>anh như đang muốn trách anh nhiều thế 
+			<br>Từng nói đã chọn đi, đừng cất bước quay về 
+			<br>Thế nhưng thấy người anh thương tổn thương anh lại thấy thương 
+			<br>Tự trách cứ bản thân, chẳng giữ em ân cần, giờ để người ta mặc em bước đi anh ân hận.</p>
+			</div>
+			<script type="text/javascript">
+   				$(".lyric").shorten({
+    			"showChars" : 275,
+    			"moreText"  : "Xem thêm",
+    			"lessText"  : "Rút gọn",
+			});
+			</script>
+        </td></tr>
+      	</table>
+      	<br>
+	</div>
+	<div class="container" ">
+		<div class="row">
+			<div class="col-3" >
+     	 		<img src="images/anhtu.jpg" />
+    		</div>
+    		<div class="col-9">
+      			<p style="font-size: 20px; "> <h4 style="color: red; margin-left: 150px">Anh Tú</h4>	
+        				<button class="btn btn-sm" style="background-color: #5C7EE0; margin-left: 120px">
+        					<img src="font/glyphicons_free/glyphicons/png/glyphicons-433-plus.png" width="10px"> Quan tâm
+        					<span class="badge badge-light">9999</span>
+        				</button>
+        			</p>
+        			<div class="anhtu" style="margin-left: 20px;margin-right: 450px ;text-align: center;">
+        			Anh Tú - Á Quân The Voice – Giọng Hát Việt 2017. Vẻ ngoài điển trai cùng với giọng hát tình cảm đã giúp Anh Tú lấy được nhiều thiện cảm từ khán giá. Thế nhưng điều mà để khán giả thực sự yêu thích anh thì đó có lẽ là một phong cách riêng biệt, một chất “Điện” chỉ có ở Anh Tú. 
+        			Anh luôn cố gắng tìm kiếm sự khác lạ trong âm nhạc cũng như trong giọng hát để tạo chất riêng cho bản thân chứ không muốn rập khuôn theo một thứ gì đã có. Ngoài khả năng ca hát anh còn có khả năng diễn xuất và sáng tác. Ngoài đời thì Anh Tú tự nhận mình là là một con người sống rất nhẹ nhàng, hòa đồng; anh rất thích đá bóng, nấu ăn và quan trọng hơn là anh luôn thích tạo cho mình những bộ đồ theo style riêng, mang đậm phong cách bản thân. Tháng 6/2017, Anh Tú chính thức đầu quân và trở thành nghệ sĩ độc quyền của công ty 6th Sense Entertainment. Các sản phẩm đã ra mắt: Sẽ Không Quay Về (ft. Đông Nhi)….	
+					</div>
+    		</div>
+		<script type="text/javascript">
+   			$(".anhtu").shorten({
+    		"showChars" : 287,
+    		"moreText"  : "Xem thêm",
+    		"lessText"  : "Rút gọn",
+		});
+		</script>		
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+<br>
+</html>
